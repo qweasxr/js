@@ -7,8 +7,8 @@
 function isPerfect(n){
 var sum_v = 0;
     for (var i = 1; i <= n/2; i += 1){
-        if (n%1 === 0){
-            sum_v += 1
+        if (n%i === 0){
+            sum_v += i
         }
     }
 return sum_v === n    
