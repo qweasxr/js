@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<script>
+function sumOfSquareDigits(a){
+    var m, n ;
+    var c = [] ;
+ 
+    while(a != 1 && c[a] !== true) 
+    {
+        c[a] = true ;
+        m = 0 ;
+        while (a > 0) {
+            n = a % 10 ;
+            m += n * n ;
+            a = (a  - n) / 10 ;
+        }
+        a = m ;
+    }
+    return (a == 1) ;
+};
+</script>
+</body>
+</html>
